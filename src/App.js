@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { loadModels } from './helpers/faceApi';
 import { createFaLibrary } from './helpers/icons';
 import Camera from './components/Camera/Camera';
