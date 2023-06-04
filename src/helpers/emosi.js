@@ -6,8 +6,8 @@ const emosiMap = {
   neutral: "netral",
   sad: "sedih",
   surprised: "terkejut",
-  male: "male",
-  female: "female",
+  male: "laki-laki",
+  female: "perempuan",
 };
 
 export const mapExpressionToEmosi = expression => emosiMap[expression];
