@@ -20,7 +20,7 @@ const Results = ({ results, processing }) => {
               <div className="results__wrapper" key={i}>
                 <div style={{ width: '300px' }}>
                   <p>
-                    saya rasa salah satu dari kalian sedang...{result.expressions.asSortedArray()[0].expression}
+                    saya rasa salah satu dari kalian sedang...{mapExpressionToEmosi(result.expressions.asSortedArray()[0].expression)}
                   </p>
                 </div>
                 <FontAwesomeIcon icon={mapExpressionToEmoji(result.expressions.asSortedArray()[0].expression)} size="2x" />
@@ -30,7 +30,7 @@ const Results = ({ results, processing }) => {
         ) : (
           <div className="results__wrapper">
             <div>
-              <p>saya rasa anda sedang...{results[0].expressions.asSortedArray()[0].expression}</p>
+              <p>saya rasa anda sedang...{mapExpressionToEmosi(results[0].expressions.asSortedArray()[0].expression)}</p>
             </div>
             <div className="results__emoji">
               <FontAwesomeIcon icon={mapExpressionToEmoji(results[0].expressions.asSortedArray()[0].expression)} size="2x" />
