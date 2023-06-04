@@ -55,6 +55,10 @@ export const drawResults = async (image, canvas, results, type) => {
         faceapi.draw.drawFaceExpressions(canvas, resizedDetections);
         faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
         break;
+      case 'boxExpressions':
+        faceapi.draw.drawDetections(canvas, resizedDetections);
+        faceapi.draw.drawFaceExpressions(canvas, resizedDetections);
+        break;
       default:
         break;
     }
