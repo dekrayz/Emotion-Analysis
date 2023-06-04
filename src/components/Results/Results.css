@@ -4,7 +4,7 @@
 
 .results__wrapper {
   display: flex;
-  margin-top: 1rem;
+  margin-top: 0.8rem;
 }
 
 .results__emoji {
@@ -16,5 +16,5 @@
 }
 
 .results__emoji svg {
-  margin-right: 0.75rem;
+  margin-right: 0.5rem;
 }
