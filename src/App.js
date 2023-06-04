@@ -25,7 +25,7 @@ function App() {
         <span role="img" aria-label="heart-emoji">
           ❤️
         </span>{' '}
-        by Dika.
+        by Andika Fadilla.
       </p>
     </div>
   );
