@@ -57,7 +57,6 @@ export const drawResults = async (image, canvas, results, type) => {
         break;
       case 'boxExpressions':
         faceapi.draw.drawDetections(canvas, resizedDetections);
-        faceapi.draw.drawFaceExpressions(canvas, resizedDetections);
         break;
       default:
         break;
