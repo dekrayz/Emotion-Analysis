@@ -23,8 +23,7 @@ const Results = ({ results, processing }) => {
                     saya rasa salah satu dari kalian sedang...{result.expressions.asSortedArray()[0].expression}
                   </p>
                 </div>
-                <FontAwesomeIcon icon={mapExpressionToEmoji(result.expressions.asSortedArray()[0].expression)} size="4x" />
-                <FontAwesomeIcon icon={mapExpressionToEmoji(result.gender)} size="4x" />
+                <FontAwesomeIcon icon={mapExpressionToEmoji(result.expressions.asSortedArray()[0].expression)} size="2x" />
               </div>
             ))}
           </div>
@@ -34,8 +33,7 @@ const Results = ({ results, processing }) => {
               <p>saya rasa anda sedang...{results[0].expressions.asSortedArray()[0].expression}</p>
             </div>
             <div className="results__emoji">
-              <FontAwesomeIcon icon={mapExpressionToEmoji(results[0].expressions.asSortedArray()[0].expression)} size="4x" />
-              <FontAwesomeIcon icon={mapExpressionToEmoji(results[0].gender)} size="4x" />
+              <FontAwesomeIcon icon={mapExpressionToEmoji(results[0].expressions.asSortedArray()[0].expression)} size="2x" />
             </div>
           </div>
         )}
