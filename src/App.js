@@ -39,7 +39,7 @@ function App() {
         <span role="img" aria-label="heart-emoji">
           ❤️
         </span>{' '}
-        by Rishabh.
+        by Dika.
       </p>
     </div>
   );
