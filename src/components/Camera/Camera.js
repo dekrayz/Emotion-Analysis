@@ -23,7 +23,7 @@ const Camera = ({ photoMode }) => {
   const getFaces = async () => {
     if (camera.current !== null) {
       const faces = await detectFaces(camera.current.video);
-      await drawResults(camera.current.video, cameraCanvas.current, faces);
+      await drawResults(camera.current.video, cameraCanvas.current, faces, 'boxLandmarks');
       setResults(faces);
     }
   };
