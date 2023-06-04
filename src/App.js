@@ -14,9 +14,9 @@ function App() {
     <div className="App">
       <header>
         <div className="App__header">
-          <h1>
+          <h3>
             <span>Deteksi Emosi</span>
-          </h1>
+          </h3>
         </div>
       </header>
       <Camera photoMode={mode} />
