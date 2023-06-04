@@ -16,13 +16,11 @@ const Results = ({ results, processing }) => {
       <div className="results">
         {results.length > 1 ? (
           <div>
-            <p>I think...</p>
             {results.map((result, i) => (
               <div className="results__wrapper" key={i}>
                 <div style={{ width: '300px' }}>
                   <p>
-                    One of you is probably {result.gender}, is looking {result.expressions.asSortedArray()[0].expression} and looks around{' '}
-                    {Math.round(result.age)}
+                    saya rasa salah satu dari kalian sedang...{result.expressions.asSortedArray()[0].expression}
                   </p>
                 </div>
                 <FontAwesomeIcon icon={mapExpressionToEmoji(result.expressions.asSortedArray()[0].expression)} size="4x" />
