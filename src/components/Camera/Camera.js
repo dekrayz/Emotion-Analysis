@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import classnames from 'classnames';
 
-import { detectFaces } from '../../helpers/faceApi';
+import { detectFaces, drawResults } from '../../helpers/faceApi';
 
 import Button from '../Button/Button';
 import Gallery from '../Gallery/Gallery';
@@ -23,7 +23,7 @@ const Camera = ({ photoMode }) => {
   const getFaces = async () => {
     if (camera.current !== null) {
       const faces = await detectFaces(camera.current.video);
-      //await drawResults(camera.current.video, cameraCanvas.current, faces, 'boxLandmarks');
+      await drawResults(camera.current.video, cameraCanvas.current, faces, 'boxLandmarks');
       setResults(faces);
     }
   };
