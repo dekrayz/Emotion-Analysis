@@ -4,7 +4,7 @@ import { loadModels } from './helpers/faceApi';
 import { createFaLibrary } from './helpers/icons';
 
 import Camera from './components/Camera/Camera';
-
+const mode = false;
 import './App.css';
 createFaLibrary();
 loadModels();
