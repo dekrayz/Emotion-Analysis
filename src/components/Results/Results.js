@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Spinner from '../Spinner/Spinner';
 
 import { mapExpressionToEmoji } from '../../helpers/emojis';
+import { mapExpressionToEmosi } from '../../helpers/emosi';
 
 import './Results.css';
 
